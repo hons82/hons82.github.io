@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "**/index.html": "liquid",
+    "**/_layouts/*.html": "liquid"
+  },
+  "themeCheck.checkOnOpen": false,
+  "themeCheck.checkOnChange": false,
+  "themeCheck.checkOnSave": false
+}

@@ -1,0 +1,11 @@
+---
+layout: blog
+---
+<article class="blog-page-content">
+    <h1 class="blog-page-title">{{ page.title | escape }}</h1>
+    <time class="blog-article-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    <div class="blog-article-content">
+        {{ content }}
+    </div>
+    <a class="blog-back-link" href="{{ '/blog/' | relative_url }}">← All blog posts</a>
+</article>

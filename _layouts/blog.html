@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.excerpt | default: page.title | strip_html | normalize_whitespace | escape }}">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/plugins/bootstrap/css/bootstrap.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/plugins/font-awesome/css/font-awesome.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body class="blog-page">
+    <header class="blog-page-header">
+        <div class="container">
+            <a href="{{ '/' | relative_url }}">← Hannes Tribus</a>
+        </div>
+    </header>
+    <main class="blog-page-main">
+        {{ content }}
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright"><a href="{{ '/' | relative_url }}">Back to the homepage</a></small>
+        </div>
+    </footer>
+</body>
+</html>
