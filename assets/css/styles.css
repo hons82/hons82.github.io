@@ -161,6 +161,10 @@ iframe {
   font-size: 20px;
   padding-top: 8px;
 }
+.header .profile-content .social a .fa-brands {
+  font-size: 20px;
+  padding-top: 8px;
+}
 /* ======= Sections======= */
 .sections-wrapper {
   padding-top: 60px;
@@ -192,7 +196,7 @@ iframe {
   font-size: 18px;
   margin-top: 0;
 }
-.latest .item .title .label {
+.latest .item .title .badge {
   margin-left: 5px;
   font-size: 12px;
 }
@@ -933,7 +937,7 @@ a:focus-visible,
   background: rgba(255, 255, 255, 0.2);
 }
 
-.theme-toggle .fa {
+.theme-toggle .fa-solid {
   margin: 0;
 }
 
@@ -980,24 +984,6 @@ a:focus-visible,
   color: #102139;
   background: var(--accent);
   transform: translateY(-2px);
-}
-
-.header .profile-content .social a.social-x {
-  display: inline-grid;
-  place-items: center;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.header .profile-content .social a.social-gitlab {
-  display: inline-grid;
-  place-items: center;
-  font-family: Arial, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 1;
 }
 
 .header .btn,

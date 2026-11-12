@@ -19,8 +19,9 @@ jQuery(document).ready(function($) {
 
     });
     
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function(element) {
+        new bootstrap.Tooltip(element);
+    });
     
     /* Load public repositories from GitHub's API instead of the retired activity widget. */
     var githubRepos = document.getElementById("ghfeed");

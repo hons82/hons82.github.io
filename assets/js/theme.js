@@ -19,14 +19,14 @@
         var isDark = root.getAttribute("data-theme") === "dark";
         var label = isDark ? "Switch to light mode" : "Switch to dark mode";
         Array.prototype.forEach.call(document.querySelectorAll("[data-theme-toggle]"), function(button) {
-            var icon = button.querySelector(".fa");
+            var icon = button.querySelector(".fa-solid");
             button.setAttribute("aria-label", label);
             button.setAttribute("title", label);
             button.setAttribute("aria-pressed", isDark ? "true" : "false");
 
             if (icon) {
-                icon.classList.toggle("fa-sun-o", isDark);
-                icon.classList.toggle("fa-moon-o", !isDark);
+                icon.classList.toggle("fa-sun", isDark);
+                icon.classList.toggle("fa-moon", !isDark);
             }
         });
     }
