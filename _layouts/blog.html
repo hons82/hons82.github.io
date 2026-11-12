@@ -6,6 +6,7 @@
     <meta name="description" content="{{ page.excerpt | default: page.title | strip_html | normalize_whitespace | escape }}">
     <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+    {% include google-analytics.html %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css" integrity="sha384-qrALq7+6jBOZIQsNnT6xGkMDru64qD6uTlDra39xrt2SoXl4pO3FX6Roz/RpR/BS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/v4-shims.min.css" integrity="sha384-BOBgwI2GEcZ4l/UA/+WOVnLChe2S4c7UhUCtdmX1m0v7Wdyk0S/tDoJOBci2ywvl" crossorigin="anonymous">
