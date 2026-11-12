@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.excerpt | default: page.title | strip_html | normalize_whitespace | escape }}">
     <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <link rel="stylesheet" href="{{ '/assets/plugins/bootstrap/css/bootstrap.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/plugins/font-awesome/css/font-awesome.min.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
@@ -13,6 +14,7 @@
     <header class="blog-page-header">
         <div class="container">
             <a href="{{ '/' | relative_url }}">← Hannes Tribus</a>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
         </div>
     </header>
     <main class="blog-page-main">

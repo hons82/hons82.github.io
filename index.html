@@ -13,6 +13,7 @@
     <meta name="description" content="Hannes Tribus — software engineer and app developer from South Tyrol, Italy.">
     <meta name="author" content="Hannes Tribus">
     <link rel="shortcut icon" href="favicon.ico">  
+    <script src="assets/js/theme.js"></script>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->
@@ -46,14 +47,17 @@
                 <h1 class="name">Hannes Tribus</h1>
                 <h2 class="desc">App Developer</h2>   
                 <ul class="social list-inline">
-                    <li><a href="https://twitter.com/hons82" target="_blank"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a class="social-x" href="https://x.com/hons82" target="_blank" rel="noopener noreferrer" aria-label="X"><span aria-hidden="true">X</span></a></li>
 					<li><a href="https://www.facebook.com/hons82" target="_blank"><i class="fa fa-facebook"></i></a></li>   
-                    <li><a href="https://plus.google.com/+HannesTribus/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="https://www.linkedin.com/pub/hannes-tribus/32/968/b37" target="_blank"><i class="fa fa-linkedin"></i></a></li>               
-                    <li class="last-item"><a href="https://github.com/hons82" target="_blank"><i class="fa fa-github"></i></a></li>                  
+                    <li><a href="https://github.com/hons82" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li class="last-item"><a class="social-gitlab" href="https://gitlab.com/hons" target="_blank" rel="noopener noreferrer" aria-label="GitLab" title="GitLab"><span aria-hidden="true">GL</span></a></li>
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:hons82@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+            <div class="header-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
+                <a class="btn btn-cta-primary" href="mailto:hons82@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+            </div>
         </div><!--//container-->
     </header><!--//header-->
     
@@ -65,47 +69,39 @@
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
                                                
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://itunes.apple.com/us/app/moneybunny/id833472031?mt=8" target="_blank">MoneyBunny</a></h3>
-                                <p class="summary">A mobile app that helps you keep track of your expenses.</p>
-                                <div class="featured-image">
-                                    <a href="https://www.facebook.com/MoneyBunnyAPP" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-featured.png" alt="MoneyBunny" loading="lazy" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">App</div>
-                                        </div>
-                                    </div>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>MoneyBunny helps you track your daily expenses so you can see where your money goes each month.</p>
-									<p>Set a budget for the things you buy regularly and track your spending over time.</p>
-									<p>MoneyBunny is a powerful yet simple tool for keeping an eye on your expenses.</p>
-                                </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://www.facebook.com/MoneyBunnyAPP" target="_blank"><i class="fa fa-thumbs-o-up"></i> Support the project</a>
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://kinetic-1ac5a2.gitlab.io" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-responsive project-image project-logo" src="assets/images/projects/kinetic-logo.svg" alt="Kinetic" loading="lazy" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://kinetic-1ac5a2.gitlab.io" target="_blank" rel="noopener noreferrer">Kinetic</a> <span class="label label-theme">Beta</span></h3>
+                                    <p>Kinetic is a new GPS activity app with live tracking, offline maps, route planning and activity sharing. It is currently looking for testers ahead of its app store release.</p>
+                                    <p><a class="more-link" href="https://kinetic-1ac5a2.gitlab.io/#testers" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i> Become a tester</a></p>
+                                </div>
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://itunes.apple.com/us/app/shoppinglist-fast-simple/id845130489?mt=8" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-1.png" alt="ShoppingList - Fast & Simple" loading="lazy" />
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://web-immoport-40a004.gitlab.io/de/index.html" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-responsive project-image project-logo" src="assets/images/projects/immoport-logo.svg" alt="Immoport" loading="lazy" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://itunes.apple.com/us/app/shoppinglist-fast-simple/id845130489?mt=8" target="_blank">ShoppingList - Fast & Simple</a></h3>
-                                    <p>A simple shopping list designed for quickly adding, checking off and deleting items.<br />Build your own list of suggestions! The app saves your entries, so you don't have to type them twice.</p>
-									<p>Available for iPhone and iPad.</p>
-                                    <p><a class="more-link" href="https://www.facebook.com/pages/Shoppinglist/557555344357667" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
+                                    <h3 class="title"><a href="https://web-immoport-40a004.gitlab.io/de/index.html" target="_blank" rel="noopener noreferrer">Immoport</a></h3>
+                                    <p>Immoport is a self-hosted tool that exports property listings from real-estate software to multiple portals in each portal's required format.</p>
+                                    <p><a class="more-link" href="https://web-immoport-40a004.gitlab.io/de/index.html" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i> Visit Immoport</a></p>
+                                </div>
                             </div><!--//item-->
-                            
+                            <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://itunes.apple.com/us/app/bletimetracker/id902295272?mt=8" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-2.png" alt="BLETimetracker" loading="lazy" />
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://gitbus-2cadc.web.app" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-responsive project-image project-logo" src="assets/images/projects/gitbus-logo.png" alt="GitBus" loading="lazy" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://itunes.apple.com/us/app/bletimetracker/id902295272?mt=8" target="_blank">BLETimetracker</a></h3>
-                                    <p>Are you surrounded by iBeacon™ transmitters at work? I am! I also need to track how much time I spend at my computer, so I built an app that does it automatically. It starts a timer when I arrive and stops it when I leave.<br />If there are no iBeacon™ transmitters where you work, check whether your computer supports Bluetooth Low Energy (BLE) and use it as an iBeacon™ transmitter.</p>
-                                </div><!--//desc-->                          
+                                    <h3 class="title"><a href="https://gitbus-2cadc.web.app" target="_blank" rel="noopener noreferrer">GitBus</a></h3>
+                                    <p>GitBus is a Windows Git client for working with GitHub, GitLab and Gitea. Manage changes, commits, branches, history and pull or merge requests in one place.</p>
+                                    <p><a class="more-link" href="https://gitbus-2cadc.web.app" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i> Visit GitBus</a></p>
+                                </div>
                             </div><!--//item-->
+                            <p class="text-center"><a class="btn btn-cta-primary project-support-button" href="https://www.paypal.com/biz/profile/tribushannes" target="_blank" rel="noopener noreferrer"><i class="fa fa-heart"></i> Support my Projects</a></p>
                             
                             <div class="item row hidden">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
